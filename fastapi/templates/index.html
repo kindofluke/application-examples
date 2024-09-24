@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/index.css') }}">
+</head>
+<body>
+    <h1>If you can see this the CSS did not load</h1>
+    <div class="window">
+        <div class="title-bar">
+            <div class="title">Hello World</div>
+            
+            <div class="buttons">
+                <button class="minimize">_</button>
+                <button class="maximize">□</button>
+                <button class="close">×</button>
+            </div>
+        </div>
+        <div class="content">
+            <p>Your Target was {{target_url}}</p>
+        </div>
+    </div>
+</body>
+</html>
